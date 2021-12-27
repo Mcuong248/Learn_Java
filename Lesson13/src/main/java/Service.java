@@ -22,8 +22,7 @@ public class Service implements IService {
         try {
             FileReader reader = new FileReader("Book.json");
             //Lấy kiểu mong muốn được convert sang
-            Type objectType = new TypeToken<ArrayList<Book>>() {
-            }.getType();
+            Type objectType = new TypeToken<ArrayList<Book>>() {}.getType();
 //            System.out.println(objectType);
 
 
