@@ -50,4 +50,16 @@ public class UserService {
             e.printStackTrace();
         }
     }
+
+    public void updateUsername(Connection conn, String newUserName, User user){
+        String query = "UPDATE users\n" +
+                "SET username = '"+newUserName+"'\n" +
+                "WHERE id = 'z2Rhw'";
+        try {
+            Statement stm = conn.createStatement();
+            stm.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

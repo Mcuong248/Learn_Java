@@ -55,5 +55,14 @@ public class Controller {
                 break;
         }
         return gender;
+
+    }
+
+    public void updateUsername(){
+        System.out.println("New Username");
+        String newUserName = sc.nextLine();
+
+        User updateUser = service.searchById(conn, "zrdCF");
+        service.updateUsername(conn, newUserName, updateUser);
     }
 }
